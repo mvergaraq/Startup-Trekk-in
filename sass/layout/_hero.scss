@@ -1,0 +1,37 @@
+.hero {
+  background-image: url('../images/bg-hero.svg');
+  background-position: right bottom;
+  background-size: 150%;
+  background-repeat: no-repeat;
+  min-height: 165vw;
+  
+  @include respond-to('medium') {
+    background-size: contain;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    min-height: 61vw;
+  }
+
+  &__about {
+    max-width: 370px;
+    margin-left: 8%;
+    margin-top: 15vw;
+
+    @include respond-to('medium') {
+      margin-top: 5vw;
+    }
+
+    @include respond-to('large') {
+      padding-top: 10vw;
+    }
+
+    h1 {
+      @include relative-converter(font-size, rem, $xxxx-large, 16);
+      font-weight: $bold;
+
+      @include respond-to('medium') {
+        @include relative-converter(font-size, rem, $xxxxx-large, 16);
+      }
+    }
+  }
+}

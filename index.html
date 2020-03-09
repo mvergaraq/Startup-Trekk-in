@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Prueba - Startup Treekin</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navigation">
+    <a class="navbar-brand" href="#">
+      <div class="navigation__LogoHeader">
+        <img src="images/Logo.svg" alt="Trekk-in logo">
+      </div>
+    </a>
+    <button class="navbar-toggler navigation__toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navigation">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item navigation__item">
+          <a class="nav-link navigation__item_link" href="#about">Acerca de</a>
+        </li>
+        <li class="nav-item navigation__item">
+          <a class="nav-link navigation__item_link" href="#characteristics">Características</a>
+        </li>
+        <li class="nav-item navigation__item">
+          <a class="nav-link navigation__item_link" href="#prices">Precios</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item navigation__item active">
+          <a class="nav-link navigation__item_link active" href="#">Iniciar Sesión<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <button class="navigation__button">Regístrate</button>
+        </li>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="about">
+      <div class="hero__about">
+        <h1>Haz Trekking sin Parar</h1>
+        <p>Con trekk-in te despreocuparás de la estimación de tu viaje, ya que con unos simples pasos podrás definir la mejor ruta a tomar con tus compañeros de expedición.</p>
+      </div>
+    </section>
+    <section class="characteristics" id="characteristics">
+      <h2 class="characteristics characteristics__title">Características</h2>
+      <div class="characteristics characteristics-flexbox">
+        <div class="characteristics characteristics-flexbox__item">
+          <svg width="100%" height="100%" viewBox="0 0 318 165" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <g class="bar-graph" fill-rule="evenodd">
+                <path class="a-bar" fill="#EE9480" d="M10.949 53h34.778v108H10.949zM63.613 0h34.778v161H63.613zM116.276 32h34.778v129h-34.778z"/>
+                <path class="b-bar" fill="#2AB7CA" d="M168.94 53h34.778v108H168.94zM221.603 28h34.778v133h-34.778zM274.267 73h34.778v88h-34.778z"/>
+                <path class="plane" d="M3 162.5h312.503" stroke="#979797" stroke-width="5" stroke-linecap="square"/>
+            </g>
+        </svg>
+        </div>
+        <div class="characteristics characteristics-flexbox__item">
+          <h3>Estadísticas de tu progreso</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+    </section>
+    <section class="prices" id="prices">
+      <h2>Precios</h2>
+      <div class="prices__flexbox">
+        <div class="cardy">
+          <div class="cardy__content">
+            <h3>Trekk-in Free</h3>
+            <p class="cardy__price">$ 0 / mes</p>
+            <ul class="cardy__list">
+              <li class="cardy__item">Ver mapas creado por usuarios</li>
+              <li class="cardy__item">Conectar con otros usuarios</li>
+            </ul>
+          </div>
+          <div class="cardy__bottom">
+            <button class="cardy__button">Obtén Free</button>
+          </div>
+        </div>
+        <div class="cardy">
+          <div class="cardy__content">
+            <h3>Trekk-in Premium</h3>
+            <p class="cardy__price">$ 3500 / mes</p>
+            <ul class="cardy__list">
+              <li class="cardy__item">Ver mapas creado por usuarios</li>
+              <li class="cardy__item">Conectar con otros usuarios</li>
+              <li class="cardy__item">Definir mejores rutas</li>
+              <li class="cardy__item">Mapas Offline</li>
+              <li class="cardy__item">Integración con otras aplicaciones</li>
+            </ul>
+          </div>
+          <div class="cardy__bottom">
+            <button class="cardy__button">Obtén Premium</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__items">
+        <div class="footer__grid">
+          <p class="footer__grid_item">Legal</p>
+          <p class="footer__grid_item">Cookies</p>
+          <p class="footer__grid_item">Sobre anuncios</p>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <p>© 2018 Trekk-in SPA</p>
+      </div>
+    </footer>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

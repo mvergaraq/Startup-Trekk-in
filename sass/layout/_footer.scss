@@ -1,0 +1,27 @@
+.footer {
+  background-color: $raising-black;
+  color: $white;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2% 5%;
+  
+  &__items p, &__copyright p{
+    color: $white;
+    @include relative-converter(font-size, rem, $x-small, 16);
+    
+    @include respond-to('medium') {
+      @include relative-converter(font-size, rem, $medium, 16);
+    }
+  }
+  
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    &_item{
+      grid-column: auto / span 1;
+    }
+  }
+}

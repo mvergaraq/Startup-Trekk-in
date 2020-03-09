@@ -1,0 +1,11 @@
+.navigation {
+  padding: 2.5% 8%;
+
+  &__item_link {
+    color: $raising-black;
+
+    &:hover {
+      color: $silver-chalice;
+    }
+  }
+}

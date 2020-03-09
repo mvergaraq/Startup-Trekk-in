@@ -1,0 +1,21 @@
+.prices {
+  background-image: url('../images/bg-price.svg');
+  background-size: cover;
+  padding-top: 15%;
+
+  h2 {
+    @include relative-converter(font-size, rem, $xxx-large, 16);
+    text-align: center;
+    color: $white;
+    font-weight: $bold;
+    margin: 5% 0;
+  }
+
+  &__flexbox{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 5%;
+  }
+}

@@ -1,0 +1,55 @@
+.characteristics {
+  padding: 0 5%;
+  margin-bottom: 2%;
+
+  &__title {
+    text-align: center;
+    @include relative-converter(font-size, rem, $xx-large, 16);
+    font-weight: $bold;
+    margin: 10% 0;
+
+    @include respond-to('medium') {
+      text-align: center;
+      @include relative-converter(font-size, rem, $xxx-large, 16);
+      font-weight: $bold;
+      margin: 0 0 5% 0;
+    }
+  }
+}
+
+.characteristics-flexbox {
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+
+  &__item {
+    max-width: 480px;
+    margin-bottom: 15%;
+    @include respond-to('medium') {
+      margin-bottom: 0;
+      & svg {
+        animation: fadein 4s ease-in;
+      }
+    }
+
+
+    h3 {
+      @include relative-converter(font-size, rem, $large, 16);
+      font-weight: $bold;
+
+      @include respond-to('medium') {
+        @include relative-converter(font-size, rem, $xx-large, 16);
+      }
+    }
+
+    p {
+      font-family: $open-sans;
+    }
+  }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
